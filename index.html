@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notepad</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="./script.js" defer></script>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="wrapper">
+      <div class="col-1">
+        <h1>Notepad</h1>
+        <form action="">
+          <input
+            type="text"
+            id="title"
+            placeholder="Title"
+            required
+            maxlength="20"
+          />
 
-        <div col-1>
+          <textarea
+            id="note"
+            placeholder="start writing"
+            cols="50"
+            rows="20"
+          ></textarea>
+          <div class="button">
+            <button id="clear">clear</button>
+            <button id="save">Save</button>
+          </div>
+        </form>
+      </div>
 
-            <h1>Notepad</h1>
-            <form action="">
-                <input type="text" id="title" placeholder="title" required maxlength="20">
-
-                <textarea name="" id="note" required placeholder="start writing">
-
-                </textarea>
-                <button id="clear">clear</button>
-                <button id="save">Save</button>
-            </form>
-
+      <div class="col-2">
+        <div>
+          <h3>title</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repudiandae rem, commodi iure officiis aliquid soluta culpa omnis
+            molestias illum dolorem!
+          </p>
         </div>
-
-        <div class="col-2">
-
-        </div>
-
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
