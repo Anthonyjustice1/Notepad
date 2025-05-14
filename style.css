@@ -21,6 +21,7 @@
   border-radius: 5px;
 }
 .col-1 h1 {
+  font-size: 45px;
   margin-bottom: 10vh;
   color: #30382f;
 }
@@ -67,10 +68,25 @@ form {
   color: #fff;
 }
 .col-2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 50%;
   background: #ccd5ae;
   height: 84vh;
   padding: 2vh;
   border-radius: 5px;
   color: #30382f;
+  overflow-y: scroll;
+}
+.col-2 divz {
+  font-size: 15px;
+  width: 30%;
+  text-align: center;
+  background: #a3b18a;
+  padding: 2vh;
+  border-radius: 5px;
+  height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 2vh;
 }
