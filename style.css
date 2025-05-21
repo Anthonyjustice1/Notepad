@@ -68,9 +68,8 @@ form {
   color: #fff;
 }
 .col-2 {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 50%;
   background: #ccd5ae;
   height: 84vh;
@@ -79,14 +78,28 @@ form {
   color: #30382f;
   overflow-y: scroll;
 }
-.col-2 divz {
-  font-size: 15px;
-  width: 30%;
+.row {
   text-align: center;
-  background: #a3b18a;
-  padding: 2vh;
-  border-radius: 5px;
   height: 200px;
-  overflow-y: scroll;
-  margin-bottom: 2vh;
+  overflow: auto;
+  background: #a3b18a;
+  margin: 2px;
+  padding: 1vh;
+  border-radius: 5px;
+}
+.note-content {
+  padding: 1vh;
+  border: 1px solid #a3b18a;
+}
+.note-btn {
+  margin-top: 10px;
+}
+#edit,
+#del {
+  outline: none;
+  border: none;
+  padding: 8px;
+  background: #ccd5ae;
+  font-size: 16px;
+  border-radius: 5px;
 }
